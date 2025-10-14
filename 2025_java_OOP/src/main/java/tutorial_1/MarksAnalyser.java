@@ -52,6 +52,20 @@ public class MarksAnalyser {
         
         
         System.out.println("The average of the marks is: " + AverageCalc(total_marks,list_of_marks.length));
+    
+        System.out.println("The max mark is: " + MaxCalc(list_of_marks));
+        
+        System.out.println("The min mark is: " + MinCalc(list_of_marks));
+        
+        
+        
+        String printstring="";
+        for(int marks : Bubblesort(list_of_marks)){
+           printstring= printstring+ " " + marks  + "," ;
+        }
+        printstring = printstring.substring(0,printstring.length()-1);
+        
+        System.out.println("The sorted list of marks is: " + printstring);
     }
     
     public static int AverageCalc(int totalmarks, int length){
@@ -79,5 +93,23 @@ public class MarksAnalyser {
         return min;
     }
     
+    public static int[] Bubblesort(int[] marklist){
+        int[] sorted = new int[marklist.length];
+        boolean swapped;
+        
+        for (int i = 0; i < sorted.length - 1; i++) {
+        swapped = false;
+
+        for (int j = 0; j < sorted.length - i - 1; j++) {
+            if (marklist[j] > marklist[j + 1]) {
+                int temp = marklist[j];
+                marklist[j] = marklist[j + 1];
+                marklist[j + 1] = temp;
+                swapped = true;}
+            }
+        }
+        
+        return sorted;
+    }
     
 }   
