@@ -51,7 +51,33 @@ public class MarksAnalyser {
         System.out.println("marks are below 40 (Fail)" + fails + "\nmarks from 40 to 49 (Pass)" + just_pass + "\nmarks from 50 to 59 (2:2)" + ok_pass + "\nmarks from 60 to 69 (2:1)" + good_pass + "\nmarks equal or above 70 "+ great_pass);
         
         
-        System.out.println("The average of the marks is: " + (total_marks/list_of_marks.length));
+        System.out.println("The average of the marks is: " + AverageCalc(total_marks,list_of_marks.length));
+    }
+    
+    public static int AverageCalc(int totalmarks, int length){
+        int average = totalmarks/length;
+        return average;
     }
 
-}
+    public static int MaxCalc(int[] list){
+        int max = list[0];
+        for(int i = 0; i< list.length; i++){
+            if(max < list[i]){
+               max = list[i];
+            }
+        }
+        return max;
+    }
+    
+    public static int MinCalc(int[] list){
+        int min = list[0];
+        for(int i = 0; i< list.length; i++){
+            if(min > list[i]){
+               min = list[i];
+            }
+        }
+        return min;
+    }
+    
+    
+}   
