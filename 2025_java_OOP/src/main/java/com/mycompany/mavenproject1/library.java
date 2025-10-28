@@ -4,6 +4,7 @@
  */
 package com.mycompany.mavenproject1;
 
+import java.util.Scanner;
 /**
  *
  * @author poema
@@ -43,7 +44,7 @@ public class library {
     }
     
     
-    public void displayBookInfo(String book_title){
+    public void displayBookInfo(){
         System.out.println("TITLE: "+ title);
         System.out.println("AUTHOR: "+ author);
         System.out.println("BORROWED STATUS: "+ is_borrowed);
@@ -64,5 +65,31 @@ public class library {
         
         total_books ++;
                 
+    }
+    
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Welcome to the library");
+        
+        library book1=new library("Chess openings", "Levy Rosman");
+        library book2=new library("Coding in java 101", "Anon");
+        library book3=new library("Pschology for beginners", "Anakin Skywalker");
+        
+        book1.displayBookInfo();        
+        book1.borrow_books();
+        displayLibraryStats();
+        book2.borrow_books();
+        displayLibraryStats();
+        book3.borrow_books();
+        displayLibraryStats();
+        book1.return_books();
+        displayLibraryStats();
+        book2.return_books();
+        book3.return_books();
+        displayLibraryStats();
+        
+        
     }
 }
