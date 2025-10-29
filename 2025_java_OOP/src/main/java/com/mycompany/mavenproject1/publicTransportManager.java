@@ -12,5 +12,10 @@ package com.mycompany.mavenproject1;
 
 public class publicTransportManager {
     
+    // Making Route Objects 
+    Route routeA=new Route("City-A","City-B","City-C","City-D", "City-E");
+    Route routeB=new Route("City-E","City-D","City-C","City-B", "City-A");
+    
+    // Making transportations
     
 }
