@@ -10,4 +10,17 @@ package com.mycompany.mavenproject1;
  */
 public class vehicles {
     
+    //instance variables
+    
+    String company;
+    String brand;
+    String type;
+    int num_of_wheel;
+    int num_of_seats;
+    int speed;
+    route route;
+    
+    //class variables
+    private static int total vehicles;
+    
 }
