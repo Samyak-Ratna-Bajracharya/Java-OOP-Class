@@ -11,7 +11,7 @@ package com.mycompany.mavenproject1;
 
 import java.util.Scanner;
 
-public class Route {
+public class Road {
     
     //instance variable/property
     private String[] stops;
@@ -20,12 +20,12 @@ public class Route {
     private static int totalRoutes=0;
     
     //instance method
-    public void editRoute(String... cities){
+    public void editRoad(String... cities){
         stops=cities;
     }
     
     //instance method
-    public void editRouteManually() {
+    public void editRoadManually() {
         System.out.println("list the cities of this route ");
         Scanner take_route= new Scanner(System.in);
         String input = take_route.nextLine();
@@ -37,7 +37,7 @@ public class Route {
     }
     
     //instance method
-    public void showRoute(){
+    public void showRoad(){
         
         String printStr="";
         
@@ -50,12 +50,12 @@ public class Route {
     }
     
     //class method
-    public static void showTotalRoutes(){
+    public static void showTotalRoads(){
         System.out.println("The number of total routes determined by the organization so far is: "+ totalRoutes);
     }
     
     //constructor
-    public Route(String... list) {
+    public Road(String... list) {
         stops=list;
         totalRoutes++;
     }
