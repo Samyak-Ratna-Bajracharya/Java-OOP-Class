@@ -20,8 +20,6 @@ public class Vehicle {
     private String startingCity;
     private int num_of_stops;
     private String numberPlate;
-    
-    
     private String travelRoute="";
     private String[] route;
     
@@ -136,10 +134,12 @@ public class Vehicle {
         total_vehicles++;
     }
     
+    //class method
     public static void showTotalVehicles(){
         System.out.println("The total number of vehicles registered is: " + total_vehicles);
     }
     
+    //instance method
     public void showVehicleInfo(){
         System.out.println("This vehicle is owned by: "+this.company);
         System.out.println("The brand of this vehicle is: "+this.brand);
