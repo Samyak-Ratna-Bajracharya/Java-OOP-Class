@@ -62,5 +62,15 @@ public class Train extends Vehicle{
     public double getTicketPrice() {
         return ticketPrice;
     }
+    
+    @Override
+    public void showVehicleInfo() {
+        super.showVehicleInfo(); // display base info
+        System.out.println("----- Train Details -----");
+        System.out.println("Train Driver ID: " + trainDriverID);
+        System.out.println("Number of Carriages: " + numOfCarriages);
+        System.out.println("Seats per Carriage: " + numOfSeatsPerCarriage);
+        System.out.println("Ticket Price: " + ticketPrice);
+    }
 }
 

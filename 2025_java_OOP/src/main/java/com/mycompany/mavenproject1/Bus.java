@@ -64,4 +64,13 @@ public class Bus extends Vehicle {
         return busFare;
     }
      
+    @Override
+    public void showVehicleInfo() {
+        super.showVehicleInfo(); // display base info
+        System.out.println("----- Bus Details -----");
+        System.out.println("Bus Driver ID: " + DriverID);
+        System.out.println("Radio Frequency: " + radioFrequency);
+        System.out.println("Number of Emergency Exits: " + numOfEmergencyExits);
+        System.out.println("Bus Fare: " + busFare);
+    }
 }

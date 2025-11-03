@@ -35,12 +35,25 @@ public class publicTransportManager {
     
     Taxi taxi1 = new Taxi("CityCabs", "Toyota Prius", "Taxi", 4, new Road("City-A","City-B"), "City-A", 2, "TX-01", "John Doe", "LIC12345", 1.2, true);
     Taxi taxi2 = new Taxi("CityCabs", "Honda Civic", "Taxi", 4, new Road("City-C","City-D"), "City-C", 2, "TX-02", "Jane Smith", "LIC67890", 1.5, false);
-
+    Taxi taxi3 = new Taxi("CityCabs", "Hyundai Elantra", "Taxi", 4, new Road("City-D","City-E"), "City-D", 2, "TX-03", "Alice Brown", "LIC24680", 1.3, true);
+    Taxi taxi4 = new Taxi("CityCabs", "Toyota Corolla", "Taxi", 4, new Road("City-E","City-F"), "City-E", 2, "TX-04", "Bob White", "LIC13579", 1.4, false);
+    Taxi taxi5 = new Taxi("CityCabs", "Honda Accord", "Taxi", 4, new Road("City-F","City-G"), "City-F", 2, "TX-05", "Charlie Green", "LIC11223", 1.5, true);
+    Taxi taxi6 = new Taxi("CityCabs", "Ford Focus", "Taxi", 4, new Road("City-A","City-C"), "City-A", 2, "TX-06", "Diana Blue", "LIC33445", 1.2, true);
+    
     Vehicle vehicle1 = new Vehicle("GenericCo", "GenericModel", "Shuttle", 30, road1, "City-A", 3, "V-001");
     Vehicle vehicle2 = new Vehicle("GenericCo", "GenericModel2", "Shuttle", 35, road2, "City-B", 4, "V-002");
 
     // Arrays for easy access
-    Vehicle[] allVehicles = {train1, train2, train3, bus1, bus2, taxi1, taxi2, vehicle1, vehicle2};
+    Vehicle[] allVehicles = {
+        // Trains
+        train1, train2, train3, train4, train5, train6,
+        // Buses
+        bus1, bus2, bus3, bus4, bus5, bus6,
+        // Taxis
+        taxi1, taxi2, taxi3, taxi4, taxi5, taxi6,
+        // Generic Vehicles
+        vehicle1, vehicle2
+    };
     Road[] allRoads = {road1, road2, road3, road4, road5};
 
     Scanner scanner = new Scanner(System.in);

@@ -140,19 +140,17 @@ public class Vehicle {
     }
     
     //instance method
-    public void showVehicleInfo(){
-        System.out.println("This vehicle is owned by: "+this.company);
-        System.out.println("The brand of this vehicle is: "+this.brand);
-        System.out.println("This vehicle is a: " + this.type);
-        System.out.println("The number of seats on this vehicle is: "+ this.num_of_seats);
-        System.out.println("This Vehicle is travels on : " + this.mainRoad);
-        System.out.println("This vehicle starts running from" + this.startingCity);
-        
-        System.out.println("This vehicle's route is: " + travelRoute );
-        
-        System.out.println("This vehicle travels :" + this.num_of_stops + " cities.");
-        System.out.println("the vehicle's number plate is: "+ numberPlate);
-        
-        
-    }
+    public void showVehicleInfo() {
+        System.out.println("----- Vehicle Info -----");
+        System.out.println("Owner Company: " + this.company);
+        System.out.println("Brand: " + this.brand);
+        System.out.println("Type: " + this.type);
+        System.out.println("Number of seats: " + this.num_of_seats);
+        System.out.println("Main Road: " + this.mainRoad);
+        System.out.println("Starting City: " + this.startingCity);
+        System.out.println("Route: " + travelRoute);
+        System.out.println("Number of stops: " + this.num_of_stops);
+        System.out.println("Number Plate: " + numberPlate);
+    }        
+
 }

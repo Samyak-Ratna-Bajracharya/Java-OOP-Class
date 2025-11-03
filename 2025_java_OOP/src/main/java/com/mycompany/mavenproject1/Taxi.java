@@ -62,4 +62,14 @@ public class Taxi extends Vehicle {
     public boolean isAvailable() {
         return isAvailable;
     }
+    
+    @Override
+    public void showVehicleInfo() {
+        super.showVehicleInfo(); // display base info
+        System.out.println("----- Taxi Details -----");
+        System.out.println("Driver Name: " + driverName);
+        System.out.println("Driver License Number: " + driverLicenseNumber);
+        System.out.println("Fare per Km: " + farePerKm);
+        System.out.println("Availability: " + (isAvailable ? "Available" : "Not Available"));
+    }
 }
