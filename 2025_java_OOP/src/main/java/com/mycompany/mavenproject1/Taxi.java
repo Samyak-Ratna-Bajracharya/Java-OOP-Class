@@ -14,6 +14,8 @@ public class Taxi extends Vehicle {
     private String driverLicenseNumber;
     private double farePerKm;
     private boolean isAvailable;
+    
+    private static int num_of_taxi=0;
 
     public Taxi(String Company, String Brand, String Type, 
                 int Seats, Road mainroad, String StartCity, 
@@ -27,6 +29,8 @@ public class Taxi extends Vehicle {
         this.driverLicenseNumber = driverLicenseNumber;
         this.farePerKm = farePerKm;
         this.isAvailable = isAvailable;
+        
+        num_of_taxi ++;
     }
 
     // ---------- Setters ----------
@@ -61,6 +65,13 @@ public class Taxi extends Vehicle {
 
     public boolean isAvailable() {
         return isAvailable;
+    }
+    
+    
+    
+    
+    public static void showTotalTaxi(){
+        System.out.println("The total number of taxis is: " + num_of_taxi);
     }
     
     @Override

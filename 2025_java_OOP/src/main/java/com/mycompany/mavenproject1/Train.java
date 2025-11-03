@@ -15,6 +15,8 @@ public class Train extends Vehicle{
     private int numOfSeatsPerCarriage;
     private double ticketPrice;
 
+    private static int num_of_train=0;
+    
     public Train(String Company, String Brand, String Type, 
                  int Seats, Road mainroad, String StartCity, 
                  int StopsNum, String NumPlate, 
@@ -61,6 +63,11 @@ public class Train extends Vehicle{
 
     public double getTicketPrice() {
         return ticketPrice;
+    }
+    
+    
+     public static void showTotalTrain(){
+        System.out.println("The total number of taxis is: " + num_of_train);
     }
     
     @Override

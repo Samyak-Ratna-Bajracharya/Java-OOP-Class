@@ -48,7 +48,7 @@ public class publicTransportManager {
         // Trains
         train1, train2, train3, train4, train5, train6,
         // Buses
-        bus1, bus2, bus3, bus4, bus5, bus6,
+        bus1, bus2, bus3, bus4, bus5, bus6, bus7, bus8, bus9, bus10,
         // Taxis
         taxi1, taxi2, taxi3, taxi4, taxi5, taxi6,
         // Generic Vehicles
@@ -188,6 +188,9 @@ public class publicTransportManager {
                 case 6 -> editRoad();
                 case 7 -> {
                     Vehicle.showTotalVehicles();
+                    Train.showTotalTrain();
+                    Bus.showTotalBus();
+                    Taxi.showTotalTaxi();
                     Road.showTotalRoads();
                 }
                 case 8 -> { System.out.println("Exiting..."); return; }

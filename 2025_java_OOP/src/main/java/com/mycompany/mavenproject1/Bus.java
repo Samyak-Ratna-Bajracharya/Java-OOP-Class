@@ -15,6 +15,8 @@ public class Bus extends Vehicle {
     private int numOfEmergencyExits;
     private double busFare;
     
+    private static int num_of_bus=0;
+    
     public Bus(String Company, String Brand, String Type, 
         int Seats, Road mainroad, String StartCity, 
         int StopsNum, String NumPlate,String driverID,
@@ -26,6 +28,8 @@ public class Bus extends Vehicle {
         this.radioFrequency=Radiofreq;
         this.numOfEmergencyExits=numOfEmExit;
         this.busFare=fare;
+        
+        num_of_bus ++;
     }
 
     
@@ -64,6 +68,10 @@ public class Bus extends Vehicle {
         return busFare;
     }
      
+    public static void showTotalBus() {
+        System.out.println("The total number of buses is: " + num_of_bus);
+    }
+    
     @Override
     public void showVehicleInfo() {
         super.showVehicleInfo(); // display base info
