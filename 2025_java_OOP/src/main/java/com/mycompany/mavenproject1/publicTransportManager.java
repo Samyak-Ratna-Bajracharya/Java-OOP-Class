@@ -2,6 +2,8 @@ package com.mycompany.mavenproject1;
 
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class publicTransportManager {
 
     // ---------- Roads ----------
@@ -12,30 +14,46 @@ public class publicTransportManager {
     Road road5 = new Road("City-C", "City-D", "City-F", "City-G", "City-B");
 
     // ---------- Vehicles ----------
-    Vehicle train1 = new Vehicle("MetroTrans", "Siemens Velaro", "Silent Train", 250, road1, "City-A", 5, "MT-T1");
-    Vehicle train2 = new Vehicle("MetroTrans", "Talgo Avril", "Silent Train", 260, road2, "City-B", 5, "MT-T2");
-    Vehicle train3 = new Vehicle("GreenLine", "Alstom Avelia", "Silent Train", 220, road3, "City-A", 5, "GL-T3");
-    Vehicle train4 = new Vehicle("SkyRail", "Hitachi Azuma", "Silent Train", 280, road4, "City-B", 5, "SR-T4");
-    Vehicle train5 = new Vehicle("SkyRail", "Bombardier Zefiro", "Silent Train", 300, road5, "City-C", 5, "SR-T5");
+    Train train1 = new Train("MetroTrans", "Siemens Velaro", "Silent Train", 250, road1, "City-A", 5, "MT-T1", "Driver01", 8, 32, 75.0);
+    Train train2 = new Train("MetroTrans", "Talgo Avril", "Silent Train", 260, road2, "City-B", 5, "MT-T2", "Driver02", 9, 28, 80.0);
+    Train train3 = new Train("GreenLine", "Alstom Avelia", "Silent Train", 220, road3, "City-A", 5, "GL-T3", "Driver03", 7, 30, 70.0);
+    Train train4 = new Train("SkyRail", "Hitachi Azuma", "Express Train", 280, road4, "City-B", 5, "SR-T4", "Driver04", 10, 30, 90.0);
+    Train train5 = new Train("SkyRail", "Bombardier Zefiro", "High-Speed Train", 300, road5, "City-C", 5, "SR-T5", "Driver05", 12, 25, 95.0);
+    Train train6 = new Train("GreenLine", "Siemens Velaro", "Regional Train", 240, road3, "City-A", 5, "GL-T6", "Driver06", 8, 28, 78.0);
 
-    Vehicle bus1  = new Vehicle("MetroTrans", "Volvo", "Bus", 50, new Road("City-A","City-B","City-C"), "City-A", 3, "MT-101");
-    Vehicle bus2  = new Vehicle("MetroTrans", "Mercedes", "Bus", 55, new Road("City-C","City-D","City-E"), "City-C", 3, "MT-102");
-    Vehicle bus3  = new Vehicle("MetroTrans", "Scania", "Bus", 45, new Road("City-B","City-D","City-E"), "City-B", 3, "MT-103");
-    Vehicle bus4  = new Vehicle("GreenLine", "Volvo", "Bus", 40, new Road("City-B","City-C","City-D"), "City-B", 3, "GL-201");
-    Vehicle bus5  = new Vehicle("GreenLine", "Mercedes", "Bus", 60, new Road("City-D","City-F","City-G"), "City-D", 3, "GL-202");
-    Vehicle bus6  = new Vehicle("GreenLine", "Scania", "Bus", 35, new Road("City-C","City-E","City-F"), "City-C", 3, "GL-203");
-    Vehicle bus7  = new Vehicle("SkyRail", "Volvo", "Bus", 50, new Road("City-A","City-C","City-E"), "City-A", 3, "SR-301");
-    Vehicle bus8  = new Vehicle("SkyRail", "Mercedes", "Bus", 55, new Road("City-B","City-F","City-G"), "City-B", 3, "SR-302");
-    Vehicle bus9  = new Vehicle("SkyRail", "Scania", "Bus", 45, new Road("City-A","City-F","City-G"), "City-A", 3, "SR-303");
-    Vehicle bus10 = new Vehicle("MetroTrans", "Volvo", "Bus", 48, new Road("City-B","City-D","City-F"), "City-B", 3, "MT-104");
-    Vehicle bus11 = new Vehicle("GreenLine", "Mercedes", "Bus", 58, new Road("City-C","City-D","City-F"), "City-C", 3, "GL-204");
-    Vehicle bus12 = new Vehicle("SkyRail", "Scania", "Bus", 42, new Road("City-D","City-E","City-G"), "City-D", 3, "SR-304");
+    
+    Bus bus1  = new Bus("MetroTrans", "Volvo", "Bus", 50, new Road("City-A","City-B","City-C"), "City-A", 3, "MT-101", "BusDriver1", 101.5, 2, 2.50);
+    Bus bus2  = new Bus("GreenLine", "Mercedes", "Bus", 60, new Road("City-D","City-F","City-G"), "City-D", 3, "GL-202", "BusDriver2", 102.5, 2, 3.00);
+    Bus bus3  = new Bus("MetroTrans", "Scania", "Bus", 45, new Road("City-B","City-D","City-E"), "City-B", 3, "MT-103", "BusDriver3", 103.5, 2, 2.75);
+    Bus bus4  = new Bus("GreenLine", "Volvo", "Bus", 40, new Road("City-B","City-C","City-D"), "City-B", 3, "GL-201", "BusDriver4", 104.0, 2, 2.60);
+    Bus bus5  = new Bus("SkyRail", "Mercedes", "Bus", 55, new Road("City-B","City-F","City-G"), "City-B", 3, "SR-302", "BusDriver5", 105.2, 2, 3.10);
+    Bus bus6  = new Bus("SkyRail", "Scania", "Bus", 45, new Road("City-A","City-F","City-G"), "City-A", 3, "SR-303", "BusDriver6", 106.0, 2, 2.90);
+    Bus bus7  = new Bus("MetroTrans", "Scania", "Bus", 45, new Road("City-B","City-D","City-E"), "City-B", 3, "MT-103", "BusDriver3", 103.5, 2, 2.75);
+    Bus bus8  = new Bus("GreenLine", "Volvo", "Bus", 40, new Road("City-B","City-C","City-D"), "City-B", 3, "GL-201", "BusDriver4", 104.0, 2, 2.60);
+    Bus bus9  = new Bus("SkyRail", "Mercedes", "Bus", 55, new Road("City-B","City-F","City-G"), "City-B", 3, "SR-302", "BusDriver5", 105.2, 2, 3.10);
+    Bus bus10  = new Bus("SkyRail", "Scania", "Bus", 45, new Road("City-A","City-F","City-G"), "City-A", 3, "SR-303", "BusDriver6", 106.0, 2, 2.90);
+    
+    Taxi taxi1 = new Taxi("CityCabs", "Toyota Prius", "Taxi", 4, new Road("City-A","City-B"), "City-A", 2, "TX-01", "John Doe", "LIC12345", 1.2, true);
+    Taxi taxi2 = new Taxi("CityCabs", "Honda Civic", "Taxi", 4, new Road("City-C","City-D"), "City-C", 2, "TX-02", "Jane Smith", "LIC67890", 1.5, false);
+    Taxi taxi3 = new Taxi("CityCabs", "Hyundai Elantra", "Taxi", 4, new Road("City-D","City-E"), "City-D", 2, "TX-03", "Alice Brown", "LIC24680", 1.3, true);
+    Taxi taxi4 = new Taxi("CityCabs", "Toyota Corolla", "Taxi", 4, new Road("City-E","City-F"), "City-E", 2, "TX-04", "Bob White", "LIC13579", 1.4, false);
+    Taxi taxi5 = new Taxi("CityCabs", "Honda Accord", "Taxi", 4, new Road("City-F","City-G"), "City-F", 2, "TX-05", "Charlie Green", "LIC11223", 1.5, true);
+    Taxi taxi6 = new Taxi("CityCabs", "Ford Focus", "Taxi", 4, new Road("City-A","City-C"), "City-A", 2, "TX-06", "Diana Blue", "LIC33445", 1.2, true);
+    
+    Vehicle vehicle1 = new Vehicle("GenericCo", "GenericModel", "Shuttle", 30, road1, "City-A", 3, "V-001");
+    Vehicle vehicle2 = new Vehicle("GenericCo", "GenericModel2", "Shuttle", 35, road2, "City-B", 4, "V-002");
 
     // Arrays for easy access
-    Vehicle[] allVehicles = {train1, train2, train3, train4, train5,
-                             bus1, bus2, bus3, bus4, bus5, bus6,
-                             bus7, bus8, bus9, bus10, bus11, bus12};
-
+    Vehicle[] allVehicles = {
+        // Trains
+        train1, train2, train3, train4, train5, train6,
+        // Buses
+        bus1, bus2, bus3, bus4, bus5, bus6, bus7, bus8, bus9, bus10,
+        // Taxis
+        taxi1, taxi2, taxi3, taxi4, taxi5, taxi6,
+        // Generic Vehicles
+        vehicle1, vehicle2
+    };
     Road[] allRoads = {road1, road2, road3, road4, road5};
 
     Scanner scanner = new Scanner(System.in);
@@ -63,8 +81,25 @@ public class publicTransportManager {
         System.out.print("Enter vehicle number plate: ");
         String plate = scanner.nextLine();
         Vehicle v = findVehicle(plate);
-        if (v != null) v.showVehicleInfo();
-        else System.out.println("Vehicle not found.");
+        if (v != null) {
+            v.showVehicleInfo();
+            if (v instanceof Train t) {
+                System.out.println("Train Driver ID: " + t.getTrainDriverID());
+                System.out.println("Number of Carriages: " + t.getNumOfCarriages());
+                System.out.println("Seats per Carriage: " + t.getNumOfSeatsPerCarriage());
+                System.out.println("Ticket Price: " + t.getTicketPrice());
+            } else if (v instanceof Bus b) {
+                System.out.println("Bus Driver ID: " + b.getDriverID());
+                System.out.println("Radio Frequency: " + b.getRadioFrequency());
+                System.out.println("Emergency Exits: " + b.getNumOfEmergencyExits());
+                System.out.println("Bus Fare: " + b.getBusFare());
+            } else if (v instanceof Taxi x) {
+                System.out.println("Driver Name: " + x.getDriverName());
+                System.out.println("License Number: " + x.getDriverLicenseNumber());
+                System.out.println("Fare per Km: " + x.getFarePerKm());
+                System.out.println("Available: " + x.isAvailable());
+            }
+        } else System.out.println("Vehicle not found.");
     }
 
     // ---------- Edit vehicle ----------
@@ -82,16 +117,29 @@ public class publicTransportManager {
         int choice = Integer.parseInt(scanner.nextLine());
 
         switch (choice) {
-            case 1 -> { System.out.print("New company: "); v.setCompany(scanner.nextLine()); }
-            case 2 -> { System.out.print("New brand: "); v.setBrand(scanner.nextLine()); }
-            case 3 -> { System.out.print("New type: "); v.setType(scanner.nextLine()); }
-            case 4 -> { System.out.print("New number of seats: "); v.setNumOfSeats(Integer.parseInt(scanner.nextLine())); }
-            case 5 -> { System.out.print("New starting city: "); v.setStartingCity(scanner.nextLine()); }
-            case 6 -> { System.out.print("New number plate: "); v.setNumberPlate(scanner.nextLine()); }
+            case 1 -> v.setCompany(scanner.nextLine());
+            case 2 -> v.setBrand(scanner.nextLine());
+            case 3 -> v.setType(scanner.nextLine());
+            case 4 -> v.setNumOfSeats(Integer.parseInt(scanner.nextLine()));
+            case 5 -> v.setStartingCity(scanner.nextLine());
+            case 6 -> v.setNumberPlate(scanner.nextLine());
             default -> System.out.println("Invalid choice.");
         }
+
+        // Edit subclass-specific fields
+        if (v instanceof Train t) {
+            System.out.print("Edit train driver ID (current: " + t.getTrainDriverID() + "): ");
+            t.setTrainDriverID(scanner.nextLine());
+        } else if (v instanceof Bus b) {
+            System.out.print("Edit bus driver ID (current: " + b.getDriverID() + "): ");
+            b.setDriverID(scanner.nextLine());
+        } else if (v instanceof Taxi x) {
+            System.out.print("Edit driver name (current: " + x.getDriverName() + "): ");
+            x.setDriverName(scanner.nextLine());
+        }
+
         System.out.println("Updated vehicle info:");
-        v.showVehicleInfo();
+        displayVehicle();
     }
 
     // ---------- Display road info ----------
@@ -133,13 +181,16 @@ public class publicTransportManager {
 
             switch (option) {
                 case 1 -> { for (Road r : allRoads) r.showRoad(); }
-                case 2 -> { for (Vehicle v : allVehicles) v.showVehicleInfo(); }
+                case 2 -> { for (Vehicle v : allVehicles) displayVehicle(); }
                 case 3 -> displayVehicle();
                 case 4 -> editVehicle();
                 case 5 -> displayRoad();
                 case 6 -> editRoad();
                 case 7 -> {
                     Vehicle.showTotalVehicles();
+                    Train.showTotalTrain();
+                    Bus.showTotalBus();
+                    Taxi.showTotalTaxi();
                     Road.showTotalRoads();
                 }
                 case 8 -> { System.out.println("Exiting..."); return; }
@@ -152,11 +203,10 @@ public class publicTransportManager {
     public void runDemo() {
         runManager();
     }
-    
-    // main
+
+    // ---------- Main ----------
     public static void main(String[] args) {
         publicTransportManager manager = new publicTransportManager();
-        // Run the interactive demo/menu
         manager.runDemo();
     }
 }
