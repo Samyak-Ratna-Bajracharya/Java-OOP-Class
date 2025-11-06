@@ -19,6 +19,7 @@ public class Person{
     //constructor
     public Person(String Name){
         name=Name;
+        
         personCount++;
     }
     
@@ -28,8 +29,8 @@ public class Person{
     }
     
     //instance method
-    public void introduce(){
-        System.out.println("Hello, I am " + this.name);
+    public void introduce(String name_){
+        System.out.println("Hello, I am " + name_);
     }
     
     //class method

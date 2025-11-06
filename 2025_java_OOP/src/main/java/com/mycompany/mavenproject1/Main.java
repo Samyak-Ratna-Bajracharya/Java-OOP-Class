@@ -10,6 +10,15 @@ package com.mycompany.mavenproject1;
  */
 public class Main {
     public static void main(String[] args) {
+        Person P1 = new Person("Damian");
+        Student St1 = new Student("Ren","w2055180");
         
+        Person St2 = new Student("Oren","w1212121");
+        
+        P1.introduce("Ram");
+        
+        St1.introduce();
+        
+        St2.introduce("Hari","01");
     }
 }
