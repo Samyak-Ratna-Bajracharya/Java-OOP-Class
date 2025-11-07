@@ -22,23 +22,23 @@ public class publicTransportManager {
     Train train6 = new Train("GreenLine", "Siemens Velaro", "Regional Train", 240, road3, "City-A", 5, "GL-T6", "Driver06", 8, 28, 78.0);
 
     
-    Bus bus1  = new Bus("MetroTrans", "Volvo", "Bus", 50, new Road("City-A","City-B","City-C"), "City-A", 3, "MT-101", "BusDriver1", 101.5, 2, 2.50);
-    Bus bus2  = new Bus("GreenLine", "Mercedes", "Bus", 60, new Road("City-D","City-F","City-G"), "City-D", 3, "GL-202", "BusDriver2", 102.5, 2, 3.00);
-    Bus bus3  = new Bus("MetroTrans", "Scania", "Bus", 45, new Road("City-B","City-D","City-E"), "City-B", 3, "MT-103", "BusDriver3", 103.5, 2, 2.75);
-    Bus bus4  = new Bus("GreenLine", "Volvo", "Bus", 40, new Road("City-B","City-C","City-D"), "City-B", 3, "GL-201", "BusDriver4", 104.0, 2, 2.60);
-    Bus bus5  = new Bus("SkyRail", "Mercedes", "Bus", 55, new Road("City-B","City-F","City-G"), "City-B", 3, "SR-302", "BusDriver5", 105.2, 2, 3.10);
-    Bus bus6  = new Bus("SkyRail", "Scania", "Bus", 45, new Road("City-A","City-F","City-G"), "City-A", 3, "SR-303", "BusDriver6", 106.0, 2, 2.90);
-    Bus bus7  = new Bus("MetroTrans", "Scania", "Bus", 45, new Road("City-B","City-D","City-E"), "City-B", 3, "MT-103", "BusDriver3", 103.5, 2, 2.75);
-    Bus bus8  = new Bus("GreenLine", "Volvo", "Bus", 40, new Road("City-B","City-C","City-D"), "City-B", 3, "GL-201", "BusDriver4", 104.0, 2, 2.60);
-    Bus bus9  = new Bus("SkyRail", "Mercedes", "Bus", 55, new Road("City-B","City-F","City-G"), "City-B", 3, "SR-302", "BusDriver5", 105.2, 2, 3.10);
-    Bus bus10  = new Bus("SkyRail", "Scania", "Bus", 45, new Road("City-A","City-F","City-G"), "City-A", 3, "SR-303", "BusDriver6", 106.0, 2, 2.90);
+    Bus bus1  = new Bus("MetroTrans", "Volvo", "Bus", 50, road1, "City-A", 3, "MT-101", "BusDriver1", 101.5, 2, 2.50);
+    Bus bus2  = new Bus("GreenLine", "Mercedes", "Bus", 60, road4, "City-D", 3, "GL-202", "BusDriver2", 102.5, 2, 3.00);
+    Bus bus3  = new Bus("MetroTrans", "Scania", "Bus", 45, road2, "City-B", 3, "MT-103", "BusDriver3", 103.5, 2, 2.75);
+    Bus bus4  = new Bus("GreenLine", "Volvo", "Bus", 40, road2, "City-B", 3, "GL-201", "BusDriver4", 104.0, 2, 2.60);
+    Bus bus5  = new Bus("SkyRail", "Mercedes", "Bus", 55, road2, "City-B", 3, "SR-302", "BusDriver5", 105.2, 2, 3.10);
+    Bus bus6  = new Bus("SkyRail", "Scania", "Bus", 45, road3, "City-A", 3, "SR-303", "BusDriver6", 106.0, 2, 2.90);
+    Bus bus7  = new Bus("MetroTrans", "Scania", "Bus", 45, road5, "City-B", 3, "MT-103", "BusDriver3", 103.5, 2, 2.75);
+    Bus bus8  = new Bus("GreenLine", "Volvo", "Bus", 40, road2, "City-B", 3, "GL-201", "BusDriver4", 104.0, 2, 2.60);
+    Bus bus9  = new Bus("SkyRail", "Mercedes", "Bus", 55, road4, "City-B", 3, "SR-302", "BusDriver5", 105.2, 2, 3.10);
+    Bus bus10  = new Bus("SkyRail", "Scania", "Bus", 45, road1, "City-A", 3, "SR-303", "BusDriver6", 106.0, 2, 2.90);
     
-    Taxi taxi1 = new Taxi("CityCabs", "Toyota Prius", "Taxi", 4, new Road("City-A","City-B"), "City-A", 2, "TX-01", "John Doe", "LIC12345", 1.2, true);
-    Taxi taxi2 = new Taxi("CityCabs", "Honda Civic", "Taxi", 4, new Road("City-C","City-D"), "City-C", 2, "TX-02", "Jane Smith", "LIC67890", 1.5, false);
-    Taxi taxi3 = new Taxi("CityCabs", "Hyundai Elantra", "Taxi", 4, new Road("City-D","City-E"), "City-D", 2, "TX-03", "Alice Brown", "LIC24680", 1.3, true);
-    Taxi taxi4 = new Taxi("CityCabs", "Toyota Corolla", "Taxi", 4, new Road("City-E","City-F"), "City-E", 2, "TX-04", "Bob White", "LIC13579", 1.4, false);
-    Taxi taxi5 = new Taxi("CityCabs", "Honda Accord", "Taxi", 4, new Road("City-F","City-G"), "City-F", 2, "TX-05", "Charlie Green", "LIC11223", 1.5, true);
-    Taxi taxi6 = new Taxi("CityCabs", "Ford Focus", "Taxi", 4, new Road("City-A","City-C"), "City-A", 2, "TX-06", "Diana Blue", "LIC33445", 1.2, true);
+    Taxi taxi1 = new Taxi("CityCabs", "Toyota Prius", "Taxi", 4, road1, "City-A", 2, "TX-01", "John Doe", "LIC12345", 1.2, true);
+    Taxi taxi2 = new Taxi("CityCabs", "Honda Civic", "Taxi", 4, road5, "City-C", 2, "TX-02", "Jane Smith", "LIC67890", 1.5, false);
+    Taxi taxi3 = new Taxi("CityCabs", "Hyundai Elantra", "Taxi", 4, road2, "City-D", 2, "TX-03", "Alice Brown", "LIC24680", 1.3, true);
+    Taxi taxi4 = new Taxi("CityCabs", "Toyota Corolla", "Taxi", 4, road3, "City-E", 2, "TX-04", "Bob White", "LIC13579", 1.4, false);
+    Taxi taxi5 = new Taxi("CityCabs", "Honda Accord", "Taxi", 4, road5, "City-F", 2, "TX-05", "Charlie Green", "LIC11223", 1.5, true);
+    Taxi taxi6 = new Taxi("CityCabs", "Ford Focus", "Taxi", 4, road3, "City-A", 2, "TX-06", "Diana Blue", "LIC33445", 1.2, true);
     
     Vehicle vehicle1 = new Vehicle("GenericCo", "GenericModel", "Shuttle", 30, road1, "City-A", 3, "V-001");
     Vehicle vehicle2 = new Vehicle("GenericCo", "GenericModel2", "Shuttle", 35, road2, "City-B", 4, "V-002");
