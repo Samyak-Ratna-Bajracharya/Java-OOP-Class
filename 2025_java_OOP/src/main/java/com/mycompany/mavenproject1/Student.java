@@ -17,8 +17,8 @@ public class Student extends Person {
         this.StudentID=ID;
     }
     
-    @Override
-    public void introduce(String name_, String stID){
-        System.out.println("Hello, I am a Student. My name is "+ name_ + "and my student ID is "+ stID);
+    
+    public void introduce(String name, String stID){
+        System.out.println("Hello, I am a Student. My name is "+ name + "and my student ID is "+ stID);
     }
 }
