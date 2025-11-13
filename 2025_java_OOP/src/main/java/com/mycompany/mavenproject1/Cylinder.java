@@ -35,7 +35,19 @@ public class Cylinder extends Circle {
     }
     
     public double getVolume(){
-        double volume= this.getArea()* this.height;
+        double volume= 3.14159265 * (this.getRadius() * this.getRadius()) * this.height;
         return volume;
+    }
+    
+    @Override
+    public double getArea(){
+        double area = 2 * 3.14159265 * this.getRadius() * this.height + 2 * 3.14159265 * this.getRadius() * this.getRadius() ;
+        return area;
+    }
+    
+    @Override
+    public String toString(){
+        String reply = "This is a cylinder of a radius of " + this.getRadius() + " and a height of " + this.height ;
+        return reply;
     }
 }
