@@ -17,8 +17,5 @@ public class Main {
         
         P1.introduce("Ram");
         
-        St1.introduce();
-        
-        St2.introduce("Hari","01");
     }
 }
