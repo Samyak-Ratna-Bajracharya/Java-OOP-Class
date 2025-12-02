@@ -8,6 +8,17 @@ package com.mycompany.mavenproject1;
  *
  * @author poema
  */
-public class week5tutorial {
+public class GeometricShapeCollection implements ShapeCollection{
     
+    @Override
+    public void addShape(GeometricObject shape){};
+    
+    @Override
+    public void printShapeList(){};
+    
+    @Override
+    public boolean runMenu(){
+    return true;
+    };
+
 }

@@ -9,8 +9,8 @@ package com.mycompany.mavenproject1;
  * @author poema
  */
 public abstract class GeometricObject {
-    private boolean filled;
-    private String color;
+    protected boolean filled;
+    protected String color;
     
     public GeometricObject(){};
     
