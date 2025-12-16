@@ -8,12 +8,20 @@ package com.mycompany.mavenproject1;
  *
  * @author poema
  */
-public class CustomException {
+
+import java.util.Scanner;
+
+public class CustomException extends Exception{
 
     /**
      * Creates a new instance of <code>CustomException</code> without detail
      * message.
      */
+    
+    int[] items = new int[10];
+    Scanner scan = new Scanner(System.in);
+    
+    
     public CustomException() {
     }
 
