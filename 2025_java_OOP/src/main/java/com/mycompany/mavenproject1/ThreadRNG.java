@@ -14,7 +14,9 @@ class AddThread extends Thread{
     public int mainnum;
     public int addint;
     
-    mainnum
+    mainnum = mainnum + addint;
+    
+    
     
 } 
 
